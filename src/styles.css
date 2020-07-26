@@ -1,0 +1,107 @@
+body {
+  background: #f3f5fa;
+}
+
+.App {
+  font-family: "Inter", sans-serif;
+  /* text-align: center; */
+}
+
+.container {
+  display: flex;
+  padding: 0 12px;
+  background: #ffffff;
+  /* Dropshadow / Depth 3 */
+  box-shadow: 0px 7px 15px rgba(7, 1, 82, 0.09);
+}
+
+.sections {
+  /* background: blue; */
+  flex-grow: 3;
+  margin: 0 12px;
+}
+
+.section {
+  background: #f3f5fa;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 24px 0;
+}
+
+.sectionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  background: white;
+  border: solid 1px #d7e0f1;
+  transition: background-color 0.5s ease-out;
+  cursor: grab;
+}
+
+ul li {
+  background-color: #fff;
+  transition: background-color 0.15s ease-out;
+  position: relative;
+  border-bottom: solid 1px #d7e0f1;
+  padding: 7px 0 7px 0;
+  white-space: nowrap;
+}
+
+ul li:hover {
+  background-color: #f6f9ff;
+  transition: background-color 0.15s ease-out;
+}
+
+li icon {
+  margin: 0 12px;
+}
+
+li span {
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  text-align: right;
+  /* background: green; */
+}
+
+.selected {
+  background: #e8efff;
+  border: solid 1px #427eff;
+}
+
+.selected:hover {
+  background: #e8efff;
+}
+
+.lastItem {
+  border-bottom: none;
+}
+
+.preview {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 18px;
+  height: fit-content;
+  /* background: pink; */
+  max-width: 500px;
+  flex-grow: 2;
+  margin: 12px;
+}
+
+.previewTitle {
+}
+
+.previewImg {
+  height: 0;
+  padding-top: 56.25%;
+  background-image: url("https://res.cloudinary.com/acloud-guru/image/fetch/w_600,q_auto/https%3A%2F%2Facloudguru-content-assets-production.s3-accelerate.amazonaws.com%2Faws-introduction-1-square.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
